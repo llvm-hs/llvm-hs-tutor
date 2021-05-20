@@ -1,5 +1,8 @@
 # llvm-hs-tutor
-A Haskell version of the llvm-tutor project using llvm-hs
+
+A Haskell version of the
+[llvm-tutor](https://github.com/banach-space/llvm-tutor) project using
+[llvm-hs](https://github.com/llvm-hs), the Haskell LLVM bindings.
 
 ## Overview
 
