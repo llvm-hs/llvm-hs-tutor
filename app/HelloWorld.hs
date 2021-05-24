@@ -39,11 +39,11 @@ helloWorldPass mod = do
   mapM_ visit defs
   return ()
   where
-    visit (IR.GlobalDefinition f@(Function {})) = do
+    visit d@(IR.GlobalDefinition f@(Function {})) = do
       tell ["Hello from: " ++ (show $ IR.name f)]
       tell ["  number of arguments: " ++ (show $ length $ fst $ IR.parameters f)]
-      return ()
-    visit _ = return ()
+      LLVM.emitDefn d
+    visit d = LLVM.emitDefn d
 
 main :: IO ()
 main = do

@@ -8,7 +8,6 @@ copyright:           "2021 Andrew Anderson"
 
 extra-source-files:
 - README.md
-- ChangeLog.md
 
 synopsis:            Haskell version of llvm-tutor
 category:            Compilers
