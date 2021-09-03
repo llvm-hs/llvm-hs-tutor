@@ -37,7 +37,7 @@ so:
 LD_LIBRARY_PATH=$(realpath ../llvm-12.0.0-root/lib) PATH=$(realpath ../llvm-12.0.0-root/bin):$PATH stack build
 ```
 
-Before you can test the HelloWorld pass, you need to prepare and input file:
+Before you can test the HelloWorld pass, you need to prepare an input file:
 
 ```
 clang -S -emit-llvm inputs/input_for_hello.c -o input_for_hello.ll
