@@ -8,8 +8,7 @@ A Haskell version of the
 
 Working directly with LLVM in C++ is tedious, unsafe, and highly error-prone.
 It is possible to write code that behaves like an out-of-source LLVM pass
-directly in Haskell. There is little to no performance difference in practice,
-because we are using the LLVM C API via `llvm-hs`.
+directly in Haskell.
 
 The goal of this project is to showcase that LLVM can in fact be easy and fun to
 work with. This is demonstrated through a collection of self-contained testable
